@@ -1,5 +1,5 @@
-$color-1: #0101ec
-$color-2: #dd51b1
+$color-1: black
+$color-2: #505882
 $color-black: black
 $color-white: white
 
@@ -57,6 +57,7 @@ canvas.webgl
 
   pointer-events: none
   mix-blend-mode: screen
+  z-index: -1
 
   @media (max-width: 64em)
       opacity: .7
@@ -103,7 +104,6 @@ canvas.webgl
 
   &:nth-child(even)
     flex-direction: row-reverse
-    background: $color-1
     
     .section__title
       text-align: right
@@ -132,7 +132,7 @@ canvas.webgl
     &-arrow
       font-size: min(9vw, 6rem)
       
-      color: $color-1
+      color: white
       margin-top: 1ch
       line-height: 1
       
